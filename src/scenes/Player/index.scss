@@ -1,0 +1,149 @@
+@import './src/style/_variable.scss';
+.ranking-list {
+    background: $background;
+    h3 {
+        font-size: $font-title;
+        color: $text-white;
+        margin-left: 20px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    .player-item-panel {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        padding: 9px;
+        border-radius: 5px;
+        background-color: $mask-color;
+        h4 {
+            letter-spacing: 1px;
+            color: $text-white;
+            opacity: 0.8;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: semi-expanded;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: $text-white;
+            background-color: $mask-color;
+            padding: 9px;
+            padding-top: 0;
+            border-bottom: 1px solid #474d51;
+        }
+        .player-item {
+            height: 31px;
+            padding: 12px;
+            background-color: $mask-color;
+            border-bottom: 1px solid #474d51;
+            @include clearfix;
+            img {
+                display: inline-block;
+                float: left;
+            }
+            li {
+                background-color: $mask-color;
+                position: relative;
+            }
+           
+            .player-name {
+                float: left;
+                color: $text-white;
+                background-color: $mask-color;
+                font-size: 15px;
+                font-weight: 300;
+                font-style: normal;
+                line-height: 0.67;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+                padding: 4px;
+                padding-left: 8px;
+                padding-bottom: 0;
+                .player-enName {
+                    font-size: 14px;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 0.68;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #d1e2eb;
+                    padding: 4px;
+                    padding-left: 0;
+                    padding-top: 8px;
+                    background-color: $mask-color;
+                }
+            }
+            .play-influence {
+                float: right;
+                color: $text-white;
+                background-color: $mask-color;
+                font-size: 16px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                opacity: .8;
+                padding: 5px;
+                padding-top: 9px;
+                padding-left: 10px;
+                width: 50px;
+                text-align: left;
+            }
+            .play-influence.font-red {
+                color: $red-button-color;
+                font-weight: 500;
+            }
+            .play-influence.font-green {
+                color: $green-button-color;
+                font-weight: 500;
+            }
+            .play-ranking {
+                width: 42px;
+                padding-top: 5px;
+                float: right;
+                color: $text-white;
+                font-size: 40px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.57;
+                letter-spacing: normal;
+                text-align: right;
+                color: rgba(180, 209, 224, 0.25);
+                background-color: $mask-color;
+                position: relative;
+            }
+            .isUp-icon {
+                background-color: $mask-color;
+                .triangle-up {
+                    right: 135px;
+                    padding-top: 13px;
+                    float: right;
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 8px solid $green-button-color;
+                    background-color: $mask-color;
+                }
+                .triangle-down {
+                    margin-top: 13px;
+                    right: 135px;
+                    float: right;
+                    width: 0;
+                    height: 0;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 8px solid $red-button-color;
+                    background-color: $mask-color;
+                }
+            }
+        }
+    }
+}

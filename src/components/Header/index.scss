@@ -1,0 +1,14 @@
+@import './src/style/_variable.scss';
+
+.header {
+  @include clearfix;
+  background:url('./images/back.svg');
+  width: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 0px;
+  margin-left: 15px;
+  height: 33px;
+  position: relative;
+  top: 33px;
+}

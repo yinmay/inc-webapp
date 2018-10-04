@@ -1,0 +1,10 @@
+@import '../../style/_variable.scss';
+
+.logo {
+    display: block;
+    cursor: pointer;
+    a {
+        width: 100%;
+        height: 100%;
+    }
+}

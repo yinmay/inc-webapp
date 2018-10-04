@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice Copy 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-231.286621%" y1="85.1196289%" x2="164.245605%" y2="-24.5686849%" id="linearGradient-1">
+            <stop stop-color="#4634A9" offset="0%"></stop>
+            <stop stop-color="#F63669" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-200.000000, -235.000000)" fill="url(#linearGradient-1)">
+            <g id="投票-互动" transform="translate(210.000000, 242.000000)">
+                <rect id="Rectangle-5" x="22" y="11" width="9" height="26" rx="3"></rect>
+                <rect id="Rectangle-5" x="0" y="0" width="12" height="37" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

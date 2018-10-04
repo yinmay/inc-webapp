@@ -1,0 +1,117 @@
+@import './../../style/_variable.scss';
+.me {
+    background: $background;
+    min-height: 100vh;
+    position: relative;
+    color: $text-white;
+    
+    .panel {
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 47px;
+        position: relative;
+        margin-bottom:80px;
+        &:after{
+            content: '';
+            height: 24px;
+            width: 24px;
+            display: block;
+            position: absolute;
+            left: -12px;
+            top: 182px;
+            background: $background;
+            border-radius: 50%;
+
+        }
+        &:before{
+            content: '';
+            height: 24px;
+            width: 24px;
+            display: block;
+            position: absolute;
+            right: -12px;
+            top: 182px;
+            background: $background;
+            border-radius: 50%;
+
+        }
+        .user-avatar {
+            left: 50%;
+            margin-left: -24px;
+            width: 48px;
+            top: -30px;
+            position: absolute;
+            width: 48px;
+            height: 61px;
+            overflow: hidden;
+            color: #fff;
+            background: url('./images/avatar.svg');
+            -webkit-mask-image: url('./images/avatar.svg');
+        }
+        .user-name {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .user-charge-inc {
+            color: $text-white;
+            top: -12px;
+            left: 230px;
+            position: absolute;
+            color: $text-white;
+            font-size: 14px;
+            background: $gradient;
+            border-radius: 24px;
+            padding: 5px 21px;
+            a{
+                color:$text-white;
+            }
+        }
+        .user-inc {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            p {
+                font-size: 12px;
+            }
+            .user-inc-number {
+                font-size: 40px;
+            }
+        }
+        .panel-bottom {
+            width: 100%;
+            margin-top: 63px;
+            font-size: 15px;
+            line-height: 65px;
+            padding-left: 15px;
+            padding-right: 15px;
+            @include clearfix;
+            tr {
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    width: 79%;
+                    background: rgba(255, 255, 255, .1);
+                    left: 12%;
+                   
+                }
+                td{
+                    a{
+                        color:$text-white;
+                    }
+                }
+               
+                .goTo {
+                    float: right;
+                    background: url('./images/goTo.svg');
+                    height: 14px;
+                    width: 8px;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

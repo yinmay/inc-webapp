@@ -1,0 +1,90 @@
+@import './../../../../style/_variable.scss';
+
+.vote-container {
+    padding-top: 10px;
+    .total-votes {
+        margin-bottom: 18px;
+        text-align: center;
+        h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+        p {
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    .vote {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .left {
+            width: 120px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: #3dc47e;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+        .right {
+            width: 120px;
+            height: 40px;
+            border-radius: 12px;
+            background-color: #ff4f52;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .vote_sum{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .left {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+        .right {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+        }
+    }
+    .rules {
+        color:$text-white;
+        margin-top: -20px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        opacity: .8;
+        .icon {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 12px;
+            width: 24px;
+            height: 24px;
+            align-self: flex-end;
+            background-image: url('./img/ball.svg');
+            background-size: 24px 24px; 
+        }
+        a{
+            span{
+                color:#fff;
+            }
+        }
+        .rules-vote {
+            color: #fff;
+            font-size: 12px;
+        }
+        .vote-records{
+            color: #fff;
+            font-size: 12px; 
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import './src/style/_variable.scss';
+.playerCard-panel {
+    height: 135px;
+    border-radius: 2px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:0.625rem;
+    color: $text-white;
+    background: $mask-color;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    border-bottom: 2px solid $gradient;
+    border-image: linear-gradient(#4B34A7, #F3366B) 30;
+    position: relative;
+    margin-bottom: 5px;
+    .border-bottom {
+        height: 2px;
+        background: $gradient;
+        bottom: 1px;
+        width: 100%;
+        position: absolute;
+    }
+}

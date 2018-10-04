@@ -1,0 +1,30 @@
+@import '../../../style/_variable.scss';
+.edit-wallet-address{
+    background: $background;
+    min-height: 100vh;
+    color: $text-white;
+    .panel{
+        margin-top: 20px;
+        .button{
+            margin-top: 25px;
+        }
+        input{
+            color:#fff;
+            background:  $mask-color;
+            opacity:.8;
+            width: 100%;
+            &::-webkit-input-placeholder { /* WebKit browsers */
+                color:    #fff;
+            }
+            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                color:    #fff;
+            }
+            &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                color:    #fff;
+            }
+            &:-ms-input-placeholder { /* Internet Explorer 10+ */
+                color:    #fff;
+            }
+        }
+    }
+}

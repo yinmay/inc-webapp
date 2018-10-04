@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="27px" viewBox="0 0 15 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle </title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="效果图" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="提币" transform="translate(-670.000000, -312.000000)" fill="#FFFFFF">
+            <g id="Group-3" transform="translate(670.000000, 312.000000)">
+                <path d="M12.7269028,26.2171811 L0.0323179304,13.4991826 C-0.0103009885,13.2666731 -0.0112417312,12.9854873 0.0323179304,12.7510651 L12.7269028,0.033066574 C12.8248813,-0.00968562918 13.1009457,-0.0123388002 13.4736431,0.033066574 L14.9671236,1.52930169 C15.0096666,1.92003266 15.0116953,2.2018569 14.9671236,2.27741925 L4.51275964,12.7510651 C4.36279896,12.9827016 4.3598187,13.2654892 4.51275964,13.4991826 L14.9671236,23.9728284 C15.008715,24.0463339 15.0131466,24.3276523 14.9671236,24.720946 L13.4736431,26.2171811 C13.1044257,26.2600237 12.825822,26.2618461 12.7269028,26.2171811 Z" id="Rectangle-" transform="translate(7.500000, 13.125000) rotate(-180.000000) translate(-7.500000, -13.125000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

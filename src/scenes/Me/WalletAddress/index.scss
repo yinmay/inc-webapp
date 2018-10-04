@@ -1,0 +1,95 @@
+@import './../../../style/_variable.scss';
+.wallet-address{
+    background:$background;
+    background: $background;
+    min-height: 100vh;
+    color: $text-white;
+    .panel{
+        margin-top: 20px;
+        .wallet-address-code{
+            font-size:13px;
+            opacity:.8;
+            padding-bottom: 20px;
+            border-bottom:1px solid rgba(255,255,255,.1);
+            margin-bottom: 20px;
+        }
+        .wallet-bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .radio{
+                position: relative;
+                line-height: 30px;
+            }
+            
+            input {
+                width: 20px;
+                height: 20px;
+                opacity: 0;
+                font-size: 12px;
+            }
+            span{
+                margin-left: 15px;
+            }
+            
+            label {
+                position: absolute;
+                left: 5px;
+                top: 3px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #999;
+            }
+            
+    
+            input:checked+label { 
+                background-color: $red-font-color;
+                border: 1px solid $red-font-color;
+            }
+            
+            input:checked+label::after {
+                position: absolute;
+                content: "";
+                width: 5px;
+                height: 10px;
+                top: 2px;
+                left: 6px;
+                border: 2px solid #fff;
+                border-top: none;
+                border-left: none;
+                transform: rotate(45deg)
+            }
+            .wallet-right{
+                a{
+                    color:#fff;
+                    display: flex;
+
+                    .edit{
+                        margin-left: 22px;
+                        display: inline-block;
+                        background: url('./img/edit.svg');
+                        height: 16px;
+                        width: 14px;
+                        background-size: contain;
+                    }
+                    span{
+                        align-self: flex-start;
+
+                    }
+                }
+                display: flex;
+                justify-content: flex-end;
+                .delete{
+                    margin-left: 22px;
+                    background: url('./img/delete.svg');
+                    height: 16px;
+                    width: 14px;
+                    background-size: contain;
+                }
+            }
+        }
+
+        
+    }
+}

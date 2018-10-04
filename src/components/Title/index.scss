@@ -1,0 +1,13 @@
+@import './src/style/_variable.scss';
+
+.title{
+    h3 {
+        font-size: $font-title;
+        color: $text-white; 
+        padding-top: 33px;
+        margin-left: 20px;
+        font-weight: 300;
+        letter-spacing:1px;
+    
+    }
+}

@@ -1,0 +1,87 @@
+@import '../../../style/_variable.scss';
+.deposit {
+    background: $background;
+    min-height: 100vh;
+    color: $text-white;
+    .copied-success{
+        text-align: center;
+        opacity: .8;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .panel {
+        height: 378px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        position: relative;
+        .qr-code{
+            background: url('./images/qrcode.png');
+            width: 200px;
+            height: 200px;
+            background-repeat: no-repeat;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 27px;
+            background-size: contain;
+            .canvas {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &:after{
+            content: '';
+            height: 24px;
+            width: 24px;
+            display: block;
+            position: absolute;
+            left: -12px;
+            top: 315px;
+            background: $background;
+            border-radius: 50%;
+
+        }
+        &:before{
+            content: '';
+            height: 24px;
+            width: 24px;
+            display: block;
+            position: absolute;
+            right: -12px;
+            top: 315px;
+            background: $background;
+            border-radius: 50%;
+
+        }
+        hr {
+            border-top-color: rgba(255, 255, 255, 0.1);
+            position: relative;
+            top: 318px;
+            width: 90%;
+            display: block;
+        }
+        .deposit-text {
+            position: absolute;
+            font-size: 12px;
+            margin-left: 28px;
+            bottom: 22px;
+        }
+    }
+    .copy-button {
+        color: $text-white;
+        font-size: 15px;
+        height: 42px;
+        width: 300px;
+        line-height: 42px;
+        background: $gradient;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,88 @@
+@import '../../../style/_variable.scss';
+.reward {
+    background: $background;
+    min-height: 100vh;
+    color: $text-white;
+    .reward-background {
+        background: url('./images/background.svg');
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        height: 580px;
+        width: 300px;
+        margin-top: 47px;
+        position: relative;
+        .reward-avatar {
+            left: 50%;
+            margin-left: -24px;
+            width: 48px;
+            top: -30px;
+            position: absolute;
+            width: 48px;
+            height: 61px;
+            overflow: hidden;
+            color: #fff;
+            background: url('./../images/avatar.svg');
+            -webkit-mask-image: url('./../images/avatar.svg');
+        }
+        .user-name {
+            padding-top: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .reward-items {
+            margin-top: 8px;
+            padding-left: 33px;
+            padding-right: 33px;
+            padding-top: 10px;
+            .reward-inc {
+                @include clearfix; // margin-top: 75px;
+                .reward-amount {
+                    float: left;
+                    padding-left: 24px;
+                    .reward-amount-inc {
+                        margin-top: 10px;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
+                    .reward-amount-cny {
+                        font-size: 12px;
+                        opacity: .8;
+                    }
+                }
+                .reward-button {
+                    margin-top: 10px;
+                    float: right;
+                    color: $text-white;
+                    font-size: 14px;
+                    background: $gradient;
+                    border-radius: 8px;
+                    padding: 8px 24px;
+                   
+                    a {
+                        color: $text-white;
+                    }
+                }
+            }
+        }
+        hr {
+            border-top-color: rgba(255, 255, 255, 0.1);
+            position: relative;
+            top: 8px;
+            width: 90%;
+            display: block;
+        }
+        .reward-bottom {
+            h4{
+                font-size:15px;
+                margin-bottom: 8px;
+            }
+            margin-top: 15px;
+            padding-left: 12px;
+            padding-right: 12px;
+            opacity: .8;
+            line-height: 1.67;
+            font-size: 12px;
+        }
+    }
+}

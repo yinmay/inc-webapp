@@ -1,0 +1,16 @@
+@import '../../style/_variable.scss';
+
+.home {
+    background: $background;
+    box-sizing: border-box;
+    padding: 24px;
+    .vote-buttons {
+        display: flex;
+        .vote-rule {
+            color:$text-white;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,163 @@
+@import '../../style/_variable.scss';
+.news-list-panel {
+    background: $background;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    .news-list {
+        color: $text-white;
+        @include clearfix;
+        .load-more{
+
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        .panel{margin-top: 15px;}
+        .news-list-item{
+            border-top: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        a {
+            color: $text-white;
+            .news-item {
+                @include clearfix;
+                padding: 15px 10px;
+                .news-item-left {
+                    display: inline-block;
+                    text-align: center;
+                    width: 45px;
+                    position: relative;
+                    .news-item-date {
+                        font-size: 21px;
+                    }
+                    .news-item-month {
+                        font-size: 12px;
+                    }
+                    &:after {
+                        top: -6px;
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        height: 2px;
+                        width: 100%;
+                        background: $gradient;
+                    }
+                }
+                .news-item-content {
+                    margin-top: -5px;
+                    float: right; // display: inline-block;
+                    width: 230px;
+                    font-size: $font-input-text;
+                    opacity: .8;
+                    overflow: hidden;
+                    line-height: 20px;
+                    text-overflow: ellipsis;
+                    // max-height: 60px;
+                }
+            }
+        }
+        .news-vote {
+            overflow: hidden;
+            @include clearfix;
+            font-size: 12px;
+            float: right;
+            width: 112px;
+            height: 26px;
+            border: 1px solid rgba(255, 255, 255, .8);
+            border-radius: 4px;
+            position: relative;
+            &:after {
+                background: $text-white;
+                opacity: .8;
+                position: absolute;
+                content: '';
+                display: block;
+                width: 1px;
+                height: 15px;
+                left: 56px;
+                top: 5px;
+            }
+            .vote-like.button-color{
+                background: $lightred;
+            }
+            .vote-like {
+                text-align: center;
+                width: 56px;
+                float: left;
+                .vote-like-icon {
+                    padding: 5px 5px;
+                    display: inline-block;
+                    height: 10px;
+                    width: 8px;
+                }
+                .vote-like-icon.line-image{
+                    transform: rotate(180deg);
+                    background-image: url('./images/like-line.svg');
+                    background-repeat: no-repeat;
+                    
+
+                }
+                .vote-like-icon.solid-image{
+                    transform: rotate(180deg);
+                    // background-color:$lightred;
+                    background-image: url('./images/unlike-solid.svg');
+                    background-repeat: no-repeat;
+                }
+                .vote-like-text {
+                    margin-left: 6px;
+                    margin-top: -3px;
+                    display: inline-block;
+                    line-height: 20px;
+                    height: 20px;
+                    position: relative;
+                    top: -2px;
+                    left: -2px;
+                }
+            }
+            .vote-unlike.button-color{
+                background: $lightblue;
+            }
+            .vote-unlike {
+                width: 56px;
+                float: right;
+                text-align: center;
+
+                .vote-unlike-icon {
+                    margin-top: 6px;
+                    padding: 3px 5px;
+                    display: inline-block;
+                    height: 10px;
+                    width: 8px;
+                    transform: rotate(360deg);
+                    background-image: url('./images/unlike-solid.svg');
+                    background-repeat: no-repeat;
+                    position: relative;
+                    left: 2px;
+                }
+                .vote-unlike-icon.line-image{
+                    padding: 3px 5px;
+                    background-image: url('./images/unlike-line.svg');
+                    background-repeat: no-repeat;
+                    
+
+                }
+                .vote-unlike-icon.solid-image{
+                    padding: 3px 5px;
+                    background-image: url('./images/unlike-solid.svg');
+                    background-repeat: no-repeat;
+                }
+                .vote-unlike-text {
+                    display: inline-block;
+                    padding-bottom: 3px;
+                    margin-right: 6px;
+                    position: relative;
+                    top: -4px;
+                }
+            }
+        }
+    }
+}

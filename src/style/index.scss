@@ -1,0 +1,96 @@
+@import './_variable.scss';
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    list-style: none;
+    font-weight: normal; 
+    font-size: 100%;
+    font-weight: 300;
+    // background: $background;
+    // color:$text-white;
+}
+
+body {
+    background: $background;
+}
+
+input {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    color: $dark;
+    font-size: $font-normal; 
+}
+
+input::placeholder {
+    color: $light;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 0;
+    margin: 0; 
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none; 
+}
+
+select {
+    border-radius: 0;
+    background-color: #fff;
+    --webkit-appearance: none;
+}
+
+a {
+  text-decoration: none; 
+    &:hover {
+      text-decoration: none; 
+    }
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=checkbox] {
+    background-color: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+/* reset */
+
+/* import */
+@import './fontawesome/font-awesome.scss';
+/* import */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Neue Haas Grotesk Text Pro, Arial Nova, Segoe UI, Helvetica Neue, \.PingFang SC, PingFang SC, Microsoft YaHei, Microsoft JhengHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, Hiragino Sans GB, sans-serif;
+    background: #fff;
+    font-size: 100%;
+    color: $dark;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.grow {
+    flex-grow: 1;
+}

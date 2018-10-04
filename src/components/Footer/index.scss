@@ -1,0 +1,42 @@
+@import './src/style/_variable.scss';
+
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 49px;
+  display: flex;
+  bottom: 0;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: $background;
+  background-repeat: no-repeat;
+  .icon {
+    cursor: pointer;
+    display: block;
+    width: 22px;
+    height: 26px;
+    box-sizing: border-box;
+    background-size: 22px 26px;
+    background-position: center;
+  }
+  .icon-1 {
+    background-image: url('./img/vote-inactive.png');
+  }
+  .icon-2 {
+    background-image: url('./img/players-inactive.svg');
+  }
+  .icon-3 {
+    background-image: url('./img/me-inactive.svg');
+  }
+  .icon-1-active {
+    background-image: url('./img/vote-active.svg');
+  }
+  .icon-2-active {
+    background-image: url('./img/players-active.svg');
+  }
+  .icon-3-active {
+    background-image: url('./img/me-active.svg');
+  }
+}

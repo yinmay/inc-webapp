@@ -1,0 +1,30 @@
+@import './../../../style/_variable.scss';
+.player-tendency {
+    .border {
+        @extend %border;
+    }
+    .panel {
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        .tab_title_wrap{
+            border: none;
+            .tab_title{
+                padding: 2px 0px;
+            }
+            .tab_title.active {
+                padding: 2px 0px;
+                background: $text-white;
+                color: rgba(0, 0, 0, 1);
+                border-radius: 20px;
+                height: 20px;
+                line-height: 20px;
+                border: none;
+                position: relative;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

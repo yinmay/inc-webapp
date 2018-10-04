@@ -1,0 +1,84 @@
+@import './../../../style/_variable.scss';
+.withdraw {
+    background: $background;
+    min-height: 100vh;
+    color: $text-white;
+    .withdraw-form {
+        .panel {
+            padding-top: 0;
+            padding-bottom: 0;
+            label {
+                display: inline-block;
+                font-size: 15px;
+                padding-top: 20px;
+                padding-bottom: 16px;
+                margin-left: 12px;
+                margin-right: 12px;
+                @include clearfix;
+                width: 94%;
+                border-bottom: 1px solid rgba(255, 255, 255, .1);
+                &:last-of-type {
+                    border: none;
+                }
+                a{
+                    color:#fff;
+                }
+                .goto-record {
+                    background: url('./images/Rectangle .svg');
+                    height: 14px;
+                    width: 8px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    float: right;
+                    margin-left: 10px;
+                }
+                input {
+                    background: $mask-color;
+                    float: right;
+                    color: $text-white;
+                    text-align: right;
+                    color: #FFF;
+                    display: inline-block;
+                    &:-moz-placeholder {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                    &::-webkit-input-placeholder {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                    &::-moz-placeholder {
+                        color: #fff;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .form-bottom {
+            margin-top: 14px;
+            font-size: 12px;
+            margin-left: 20px;
+            margin-right: 20px;
+            @include clearfix;
+            .form-bottom-left {
+                float: left;
+            }
+            .form-bottom-right {
+                float: right;
+                color: $red-font-color;
+            }
+        }
+        .button {
+            margin-top: 20px;
+        }
+    }
+    .width-role {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

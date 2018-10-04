@@ -1,0 +1,58 @@
+@import './src/style/_variable.scss';
+.player-intro {
+    @include clearfix;
+    overflow: hidden;
+    min-height: 100vh;
+    background: $background;
+    padding-bottom: 35px;
+    .card-left {
+        float: left;
+        background: $mask-color;
+        margin-left: 23px;
+        h4 {
+            font-size: 20px;
+            margin-top: 17px;
+            margin-bottom: 3px;
+            // background: $mask-color;
+        }
+        .sub-title {
+            margin-bottom: 8px;
+            font-size: 13px;
+            background: $mask-color;
+            font-weight: 300;
+        }
+        p {
+            background: $mask-color;
+            margin-bottom: 8px;
+
+            .index-number {
+                font-size: 20px;
+                font-weight: 300;
+                background: $mask-color;
+            }
+        }
+        .renewTime {
+            margin-top: 3px;
+            margin-bottom: 4px;
+            opacity: .8;
+            font-size: $font-small-text;
+            font-weight: 300;
+        }
+    }
+    .card-right {
+        float: right;
+        background: $mask-color;
+        background-size: contain;
+        img {
+            object-fit: cover;
+            height: 118px;
+            width: 88px;
+            border-radius: 45px;
+            display: block;
+            margin-top: 8px;
+            margin-right: 8px;
+            margin-bottom: 9px;
+            
+        }
+    }
+}

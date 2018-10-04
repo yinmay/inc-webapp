@@ -1,0 +1,85 @@
+@import './../../../style/_variable.scss';
+.vote-record{
+    background: $background;
+    min-height: 100vh;
+    @include clearfix;
+    flex-grow: 1;
+    .green-up{
+        float:right;
+        margin-top: -10px;
+        background: url('./../../Home/components/VoteHeader/img/down.svg');
+        transform: rotate(180deg);
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .red-down{
+        float:right;
+        margin-top: -10px;
+        background: url('./../../Home/components/VoteHeader/img/up.svg');
+        transform: rotate(180deg);
+        height: 30px;
+        width: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .vote-tab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .tab_title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .star-info{
+            display: flex;
+            flex-direction:row;
+            .star-icon {
+                width:40px;
+                height: 40px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .star-name {
+                display: flex;
+                flex-direction: column;
+                width:85%;
+                padding-left:10rpx;
+                .star-cn-name {
+                    font-size:15px;
+                }
+                .star-en-name {
+                    font-size:12px;
+                }
+            }
+            .star-state {
+                width: 40rpx;
+                height: 40rpx;
+            }
+        }
+        .vote-num {
+            font-size:12px;
+            margin-top: 10rpx;
+        }
+        .vote-num-up {
+            color: #3dc47e;
+            font-size:12px;
+            margin-top: 10rpx;
+        }
+        .vote-num-down {
+            color: #ff4f52;
+            font-size:12px;
+            margin-top: 10rpx;
+        }
+    }
+}

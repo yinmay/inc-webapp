@@ -1,0 +1,51 @@
+@import '../../../style/_variable.scss';
+.withdraw-record {
+    background: $background; 
+    min-height: 100vh;
+    color: $text-white;
+    font-size: 14px;
+    .load-more{
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -42px;
+    }
+    .panel {
+        margin-top: 20px;
+        margin-bottom: -10px;
+        font-size: 14px;
+        opacity: .8;
+        padding-top: 5px;
+        padding-bottom: 0px;
+        height: 80px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+        &:after {
+            display: none;
+        }
+        &:before {
+            display: none;
+        }
+        .withdraw-panel {
+            margin-bottom: 5px;
+            padding-top: 15px;
+            height: 40px;
+            opacity: .8;
+            @include clearfix;
+            .withdraw-wallet {
+                margin-bottom: 14px;
+            }
+            .withdraw-amount {
+                float: left;
+                padding-left: 20px;
+            }
+            .withdraw-time {
+                float: left;
+            }
+            .withdraw-status{
+                float: right;
+            }
+        }
+    }
+}

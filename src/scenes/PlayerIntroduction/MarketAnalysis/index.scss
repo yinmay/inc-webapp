@@ -1,0 +1,17 @@
+@import './../../../style/_variable.scss';
+.player-market-analysis {
+    @include clearfix;
+    .border {
+        @extend %border;
+       
+    }
+    .more-news-right {
+        float: right;
+        margin-top: 20px;
+        font-size: $font-text;
+        a{
+            color: $text-white;
+            opacity: .8;
+        }
+    }
+}

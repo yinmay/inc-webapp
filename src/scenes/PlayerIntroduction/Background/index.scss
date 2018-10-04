@@ -1,0 +1,44 @@
+@import './../../../style/_variable.scss';
+.player-background {
+
+    .border {
+        @extend %border;
+       
+    }
+    table{
+    
+        font-size: 12px;
+        font-weight: 300;
+        opacity: 0.8;
+        padding-bottom: 0;
+        tbody{
+            text-align: left;
+            tr{
+                line-height: 30px;
+                border-bottom: 1px solid #FFF;
+                td{
+                    padding-left:10px;
+                }
+                th{
+                padding: 0 11px;
+
+                }
+            }
+        }
+    }
+.player-transfer{
+    table{
+        tbody{
+
+            tr{
+                width: 100%;
+                th{
+                    padding: 0;
+                    width: 25%;
+     
+                }
+            }
+        }
+    }
+}
+}

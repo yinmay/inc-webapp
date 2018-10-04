@@ -1,0 +1,43 @@
+@import './../../../../style/_variable.scss';
+.vote-tab{
+
+	.tab_title_wrap{
+		margin-top: 20px;
+		margin-bottom: 30px;
+		padding-right: 100px;
+		padding-left: 100px;
+		border-bottom: none;
+		height: 30px;
+	}
+	.tab_title{
+		width: 90px;
+		font-weight: 500;
+		border-radius: 24px;
+		background: $gradient;
+		-webkit-background-clip: text;
+		color: transparent;
+		text-align: center;
+		line-height: 30px;
+		display: inline-block;
+	}
+	.tab_title.active{
+		color: #FFF;
+		height: 30px;
+		background: $gradient;
+		position: relative;
+	   &:after{
+		   display: none;
+	   }
+	}
+	.tab_item_wrap{
+		width: 100%;
+	}
+	.tab_item{
+		color: #FFF;
+		display: none;
+	}
+	
+	.show{
+		display: block;
+	}
+}
